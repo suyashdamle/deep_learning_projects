@@ -247,27 +247,16 @@ def classify(weights,inputs,threshold):
                 results.append(True)
             else:
                 results.append(False)
-        else:                               # 2 output neurons
-            
-            first_op=outputs[-1][0][0]
-            sec_op=outputs[-1][0][1]
-            if first_op*sec_op > 0:
-                sum_array=abs(np.sum(outputs[-1]))
-                final_layer=np.divide(outputs[-1],sum_array)
-                if final_layer[0][0]>final_layer[0][1]:
-                    results.append(True)
-                else:
-                    results.append(False)
+        else:                               # 2 output neurons - using softmax
+            e = np.exp(np.array(final_result))
+            dist = e / np.sum(e)
+            val=np.argmax(dist)
+            if val==0:
+                results.append(True)
             else:
-                # dealing with one-negative output
-                if first_op<0:
-                    results.append(False)
-                else:
-                    results.append(True)
-
-
-
+                results.append(False)
     return results
+
 
 def squared_error(inputs,outputs):
     '''
