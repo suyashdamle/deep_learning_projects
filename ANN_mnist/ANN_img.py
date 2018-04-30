@@ -13,8 +13,8 @@ import numpy as np
 import matplotlib.pyplot as plt                    # for plotting results
 
 
-learning_rate=0.05
-MAX_ITERATIONS=100000
+learning_rate=0.01
+MAX_ITERATIONS=500000
 
 
 
@@ -215,7 +215,7 @@ def train_net():
     ###################   THE PARAMETERS FOR CHANGING MODE/ ARCHITECTURE  ##################
     
     cutoff=0.005
-    sizes=[first_l,100,50,10]
+    sizes=[first_l,200,100,50,10]
     show_images=False                   # please use with only a small number of iterations - the process remains stuck till you close the image window
     ########################################################################################
 
@@ -257,7 +257,7 @@ def train_net():
         weights=backprop(weights,input_encoding,learning_rate,np.asarray(classification))
 
 
-        if number_iterations%5000==0:
+        if number_iterations%50000==0:
             # E_in and E_out calculation
             print "#iterations: ",number_iterations," : ",
             train_classification=classify(weights,one_hot_encodings_train)
@@ -278,7 +278,7 @@ def train_net():
     plt.setp(l1,linewidth=1,color='r')
     plt.setp(l2,linewidth=2,color='g')
     plt.legend([l1,l2],['E_in','E_out'])
-    plt.xlabel('#iterations (X 5000 )')
+    plt.xlabel('#iterations (X 50000 )')
     plt.ylabel('ERRORS')
     plt.savefig("img_mnist_classification.png")
 
