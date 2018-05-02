@@ -1,0 +1,26 @@
+epoch: 0 ; E_in: 0.9099 ; E_out: 0.9089
+epoch: 20 ; E_in: 0.8297 ; E_out: 0.8281
+epoch: 40 ; E_in: 0.7483 ; E_out: 0.7421
+epoch: 60 ; E_in: 0.1067 ; E_out: 0.1129
+epoch: 80 ; E_in: 0.0897 ; E_out: 0.1019
+epoch: 100 ; E_in: 0.0800 ; E_out: 0.0956
+epoch: 120 ; E_in: 0.0729 ; E_out: 0.0908
+epoch: 140 ; E_in: 0.0675 ; E_out: 0.0870
+epoch: 160 ; E_in: 0.0641 ; E_out: 0.0832
+epoch: 180 ; E_in: 0.0609 ; E_out: 0.0816
+epoch: 200 ; E_in: 0.0583 ; E_out: 0.0792
+epoch: 220 ; E_in: 0.0556 ; E_out: 0.0785
+epoch: 240 ; E_in: 0.0535 ; E_out: 0.0771
+epoch: 260 ; E_in: 0.0515 ; E_out: 0.0755
+epoch: 280 ; E_in: 0.0498 ; E_out: 0.0742
+epoch: 300 ; E_in: 0.0481 ; E_out: 0.0736
+epoch: 320 ; E_in: 0.0466 ; E_out: 0.0727
+epoch: 340 ; E_in: 0.0453 ; E_out: 0.0726
+epoch: 360 ; E_in: 0.0443 ; E_out: 0.0720
+epoch: 380 ; E_in: 0.0433 ; E_out: 0.0711
+epoch: 400 ; E_in: 0.0423 ; E_out: 0.0711
+epoch: 420 ; E_in: 0.0411 ; E_out: 0.0701
+epoch: 440 ; E_in: 0.0402 ; E_out: 0.0696
+epoch: 460 ; E_in: 0.0393 ; E_out: 0.0694
+epoch: 480 ; E_in: 0.0385 ; E_out: 0.0687
+
